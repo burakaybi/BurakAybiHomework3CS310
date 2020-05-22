@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground">
+
+
+    <ImageView
+        android:id="@+id/imgnews"
+        android:layout_width="165dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+
+
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/txtlistdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/newsid"
+        app:srcCompat="@drawable/canada" />
+
+    <TextView
+        android:id="@+id/txtlistdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="02.12.2011"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgnews"
+        app:layout_constraintTop_toTopOf="@+id/newsid"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/txtlisttitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgnews"
+        app:layout_constraintTop_toBottomOf="@+id/txtlistdate" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtlisttitle"></LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

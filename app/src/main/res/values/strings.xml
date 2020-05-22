@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BurakAybiHomework3CS310</string>
+    <string-array name="spinner_array">
+        <item>All</item>
+        <item>Economics</item>
+        <item>Politics</item>
+        <item>Sports</item>
+    </string-array>
+</resources>
